@@ -1,0 +1,354 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.top-container {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(../images/star-hotel.jpg);
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.my-nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 100px;
+  margin-top: 0;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 50px;
+  cursor: pointer;
+  display: none;
+  margin-top: 0;
+  margin-right: 20px;
+}
+.mast-text{
+  color: white;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.mast-seperation{
+  color: #FF1700;
+}
+nav {
+  flex: 1;
+  text-align: right;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+nav ul li a:hover {
+  color: #FF4949;
+}
+
+@media only screen and (max-width:900px) {
+  nav ul {
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(#30AADD, #001E6C);
+    position: absolute;
+    top: 80px;
+    right: 0;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .list-item:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  nav ul li a {
+    color: white;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .mast-text{
+    display: none;
+  }
+
+  #menuList {
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
+
+.header{
+  text-align: center;
+  margin-top: 180px;
+  font-family: sans-serif;
+  color: white;
+}
+.header-1{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.input-group{
+  width: 90% !important;
+  max-width: 500px;
+  border-radius: 25px;
+  background: #fff;
+  margin: auto;
+  padding: 3px;
+}
+
+.form-control{
+  border: 0 !important;
+  border-radius: 35px !important;
+  margin: 3px;
+  box-shadow: none !important;
+}
+.input-group-text{
+  width: 100px;
+  background-image: linear-gradient(#92B4EC, #242F9B);
+  border: 0 !important;
+  color: #fff !important;
+  padding: 10px 25px !important;
+  border-radius: 30px !important;
+  box-shadow: none !important;
+  z-index: 1 !important;
+}
+.input-group-text:hover{
+  background-image: linear-gradient(#92B4EC, #DBDFFD);
+}
+
+/* features */
+
+.top-destinations{
+  padding: 100px 0;
+  overflow: hidden;
+}
+.features-heading{
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+}
+
+.feature-img img{
+  width: 100%;
+}
+.price{
+  width: 50px;
+  height: 50px;
+  background-color: #FF4949;
+  font-weight: 600;
+  border-radius: 50%;
+  color: #fff;
+  padding: 13px;
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  position: absolute;
+  left: 20px;
+  top: -25px;
+}
+.feature-img{
+  position: relative;
+}
+.feature-details{
+  padding: 20px;
+  text-align: justify;
+  width: 100%;
+}
+.feature-details h4{
+  font-weight: 600;
+}
+.feature-box{
+  box-shadow: 0 0 10px 1px rgba(37, 73, 214, 0.18);
+  margin-bottom: 30px;
+  width: 100%;
+}
+.buy-here{
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #FF4949;
+  color: #fff;
+  position: absolute;
+  bottom: -20px;
+  right: 30px;
+  border: none;
+  font-family: sans-serif;
+}
+.buy-here:hover{
+  transform: scale(1.1);
+  transition: 1s;
+  background-color: #FF1700;
+}
+
+/* gallery */
+
+.gallery{
+  padding: 100px 0;
+  text-align: center;
+  background-color: #F5F5F5;
+  overflow: hidden;
+}
+.gallery-head{
+  font-size: 2.0rem;
+  font-weight: 600;
+}
+.gallery-box .img{
+  width: 100%;
+  border-radius: 40px;
+  cursor: pointer;
+  padding: 10px;
+  margin-top: 30px;
+}
+.gallery-box .img:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+.gallery-box h4{
+  display: block;
+  color: #fff;
+  text-shadow: -2px 2px 2px #000;
+  font-weight: 600;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.gallery-box{
+  position: relative;
+  margin-bottom: 30px;
+}
+
+/* banner */
+.banner{
+  height: 70vh;
+  background-image: url(../images/2.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  padding-top: 13%;
+  overflow: hidden;
+}
+.banner-highlights{
+  padding: 70px 0;
+  background: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.booking-btn{
+  width: 120px;
+  padding: 8px 0;
+  outline: none !important;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  background: transparent;
+  color: #fff;
+  margin-top: 20px;
+}
+.booking-btn:hover{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+/* users-feedback */
+.users-feedback{
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+}
+
+.feedback-h2-text{
+  font-weight: 500;
+  font-family: sans-serif;
+  margin-bottom: 30px;
+}
+
+.user-review{
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  box-shadow: 0 0 10px 5px #CDDEFF;
+  padding-bottom: 50px;
+  position: relative;
+}
+.user-review p{
+  padding: 70px 30px 10px 30px;
+}
+.user-review img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  position: absolute;
+  margin: 20px 0 0 -29px;
+
+}
+
+.user-review p::before{
+  content: '\201d';
+  display: block;
+  position:absolute;
+  font-size: 100px;
+  color: #6495ed;
+  font-family: sans-serif;
+  left: 44%;
+  top: -10px
+}
+
+/* footer */
+.footer{
+  padding: 60px 20px 15px;
+  background-image: linear-gradient(#2d557d, #9610fb);
+  color: #fff;
+}
+.footer-lg-text{
+  font-size: 1.5rem;
+}
+.footer-logo{
+  width: 120px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 3px;
+}
+.footer h4{
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
+.footer p{
+  font-size: 12px;
+  text-align: justify;
+  padding-right: 35px
+}
+.footer hr{
+  margin-top: 10px;
+  height: 7px !important;
+}
+.footer .copyright{
+  text-align: center;
+}
